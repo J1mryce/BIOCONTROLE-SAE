@@ -1,0 +1,10 @@
+body{
+    font-family: Arial, sans-serif;
+    margin-bottom: 35%;
+}
+
+
+
+canvas#myChart{
+    width: 100px;
+}

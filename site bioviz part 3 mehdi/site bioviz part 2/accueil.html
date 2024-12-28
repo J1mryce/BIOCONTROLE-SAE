@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Biocontrol</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			@font-face {
+    font-family: 'MaPolice';
+    src: url('/assets/fonts/maPolice.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+body {
+    font-family: 'MaPolice', Arial, sans-serif; 
+}
+			header {
+				background: url("/img/bioimg.jpg") no-repeat center center/cover;
+				color: white;
+				text-align: center;
+				padding: 100px 0;
+			}
+			header h1 {
+				font-size: 3rem;
+				font-weight: bold;
+			}
+			.section-title {
+				font-weight: bold;
+			}
+			.content p {
+				font-size: 1rem;
+				text-align: justify;
+			}
+
+			.nav-link {
+				position: relative;
+				padding-bottom: 5px;
+				margin: 0 15px;
+			}
+			.nav-link::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 3px;
+				background-color: green;
+				transition: width 0.3s ease-in-out;
+			}
+			.nav-link:hover::after {
+				width: 100%;
+			}
+
+			.dropdown-menu {
+				display: none;
+				position: absolute;
+				background-color: white;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				padding: 5px 0;
+				border: none;
+			}
+			.nav-item:hover .dropdown-menu {
+				display: block;
+			}
+			.dropdown-item:hover {
+				background-color: #f8f9fa;
+			}
+
+			@media (max-width: 768px) {
+				header h1 {
+					font-size: 2rem;
+				}
+				.nav-link {
+					margin: 0 10px;
+				}
+			}
+
+			.logo {
+				height: 58px;
+			}
+
+			#introduction {
+				margin-bottom: 40px; 
+			}
+
+			#biocontrol {
+				margin-top: 40px; 
+			}
+
+			.section-space {
+				margin-top: 30px; 
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="#">
+					<img src="/img/logobioviz.png" alt="Bioviz Logo" class="logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link fw-bold" href="/html/micro-organisme.html">Micro organisme</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Page 1</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Page 2</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link fw-bold" href="/html/macro-organisme.html">Macro organisme</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Page 1</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Page 2</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link fw-bold" href="/html/mediateur-chimique.html">Médiateurs chimiques</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Page 1</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Page 2</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link fw-bold" href="/html/SubstanceNaturel.html">Substances naturelles</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Page 1</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Page 2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="container">
+				<h1>LE BIOCONTROL</h1>
+			</div>
+		</header>
+
+		<section id="introduction" class="py-5 mb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<h5 class="section-title">Introduction</h5>
+						<p class="content">
+							Dans les champs, sous serre et en plein air, mais aussi dans les parcs et les jardins, des méthodes alternatives aux produits phytopharmaceutiques conventionnels peuvent être utilisées pour lutter contre les maladies, les agresseurs de cultures (insectes, virus, bactéries, acariens...) et les mauvaises herbes.
+						</p>
+					</div>
+					<div class="col-md-6 mb-4">
+						<h5 class="section-title">Qu’est-ce que le biocontrôle</h5>
+						<p class="content">
+							Protéger les plantes pendant leur croissance est l’un des défis historiques du monde agricole. Pour limiter le recours aux produits phytopharmaceutiques conventionnels les plus préoccupants pour l’environnement et la santé, l’une des solutions réside dans les produits de biocontrôle, qui misent sur les mécanismes naturels et les interactions entre les espèces.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="biocontrol" class="py-5 mt-4 mb-4">
+			<div class="container">
+				<div class="row section-space">
+					<div class="col-md-3">
+						<h6 class="fw-bold">Les micro-organismes</h6>
+						<p class="content">
+							Ce sont des champignons, bactéries et virus utilisés pour protéger les cultures contre les ravageurs et les maladies ou encore pour stimuler la vitalité des plantes.
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h6 class="fw-bold">Les macro-organismes</h6>
+						<p class="content">
+							Ce sont des invertébrés, insectes, acariens ou nématodes auxiliaires utilisés de façon raisonnée pour protéger les cultures contre les attaques des bioagresseurs.
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h6 class="fw-bold">Les médiateurs chimiques</h6>
+						<p class="content">
+							Il s’agit en particulier des phéromones qui permettent le suivi des vols d’insectes ravageurs et le contrôle des populations par le piégeage et la méthode de confusion sexuelle.
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h6 class="fw-bold">Les substances naturelles</h6>
+						<p class="content">
+							D’origine végétale, animale ou minérale (le soufre ou le cuivre, par exemple), elles permettent de lutter efficacement contre les agresseurs des cultures.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
